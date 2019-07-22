@@ -1,0 +1,23 @@
+The motive is to get the price and name of the product(mobile) from the amazon webpage, and further log it into a file. The constraint is that 
+for every 30 minutes of running the script, the information must get logged into a new file. The input is given in the form of url. The url
+is the product page whose name and price the user wants to download.
+
+INPUT: python filename.py "url" //when using JupyterLabs: INPUT:!ipython 'filename.ipynb' "url"
+OUTPUT: Date(yyyy/mm/dd):Time:Product Name: Product Price 
+
+The input is given via command prompt and for this argparse module(sys module can also be used) is used. Then with the help of beautiful
+soup,the html page is parsed and the output is given. 
+
+Note: In the output image, the date and time are not in sync with the IST, this is because of the server in which i got my jupyterlab 
+notebook. The code has been written for amazon.in website, i guess it can be used for amazon.com also(do try and let me know)
+
+Futher changes which can be made are: 
+1.The whole code can be divided into functions for easier understanding. 
+2.In the code I have spilt the name so it can take only the first 10 characters, this may cause a problem is the name of the product is 
+  greater than 10, so using regex module it can coded such that only the exact name of the product appears.
+
+Modules learnt:
+1.Logging 
+2.Argparse 
+3.Beautiful Soup
+4.Requests
