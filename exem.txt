@@ -1,0 +1,1 @@
+example to check if the git push origin master in feature branch will get stopped or not.
