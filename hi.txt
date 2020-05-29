@@ -1,0 +1,1 @@
+hello, a check to prevent commiting to master branch...many such will follow
